@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { LayoutModule } from '@angular/cdk/layout';
+import { LayoutModule as Layout2Module } from 'src/components/layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
+    Layout2Module
   ],
   providers: [],
   bootstrap: [AppComponent]
