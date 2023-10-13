@@ -1,0 +1,16 @@
+[
+    {
+        "firstName": "admin",
+        "lastName": "admin",
+        "username": "admin",
+        "password": "adminadmin",
+        "landingPage": "dashboard"
+    },
+    {
+        "firstName": "user",
+        "lastName": "data",
+        "username": "user",
+        "password": "useruser",
+        "landingPage": "profile"
+    }
+]
