@@ -18,7 +18,8 @@ const routes: Routes = [
       },
       {
         path: 'dashboard',
-        loadChildren: () => import('src/components/dashboard/dashboard.module').then((m) => m.DashboardModule),
+        loadChildren: () => import('src/components/dashboard/dashboard.module')
+          .then((m) => m.DashboardModule),
         canActivate: [ AuthGuard ],
       },
     ],
@@ -26,7 +27,8 @@ const routes: Routes = [
   {
     path: 'login',
     canActivate: [ LoginCheck ],
-    loadChildren: () => import('src/components/login/login.module').then((m) => m.LoginModule),
+    loadChildren: () => import('src/components/login/login.module')
+      .then((m) => m.LoginModule),
   },
   {
     path: 'not-found',
