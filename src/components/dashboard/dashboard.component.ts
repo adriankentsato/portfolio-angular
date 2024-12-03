@@ -15,7 +15,7 @@ export class DashboardComponent extends ComponentWrapper {
   ) { super(); }
 
   protected override render(): void {
-    import( './dashboard' ).then(({ Dashboard }) => {
+    import( 'src/react-components/dashboard' ).then(({ Dashboard }) => {
       this.root?.render( Dashboard({
         breakpointService: this.bps,
       }) );
