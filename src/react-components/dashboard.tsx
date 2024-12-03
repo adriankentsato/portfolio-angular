@@ -24,16 +24,16 @@ const Component: React.FunctionComponent<IProps> = ( props ) => {
     });
 
     return (
-        <div>
-            <h1>Hello World, { currentBp }</h1>
-            {(() => {
-                if ( currentBp === 'xsmall' ) {
-                    return <p>very small quasong 🥐🥐</p>
-                } else {
-                    return <div>{ currentBp } croissant 🥐🥐🥐🥐🥐</div>
-                }
-            })()}
-        </div>
+<>
+    <h1>Hello World, { currentBp }</h1>
+    {(() => {
+        if ( currentBp === 'xsmall' ) {
+            return <p>very small quasong 🥐🥐</p>
+        } else {
+            return <div>{ currentBp } croissant 🥐🥐🥐🥐🥐</div>
+        }
+    })()}
+</>
     );
 };
 
